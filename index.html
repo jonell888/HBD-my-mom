@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My mom</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <svg id="mainSVG" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+        <defs>
+            <linearGradient id="codepenGrad" x1="0" y1="383.12" x2="556" y2="383.12" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#42c2f1"/>
+                <stop offset="0.2" stop-color="#fbda4f"/>
+                <stop offset="0.6" stop-color="#ab63df"/>
+                <stop offset="0.8" stop-color="#5fc581"/>
+                <stop offset="1" stop-color="#42c2f1"/>
+            </linearGradient>		
+            
+            <pattern id="gradPattern" width="556" height="62.4" x="0" y="0" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" fill="url(#codepenGrad)" width="556" height="62.4" />
+            </pattern>		
+            <clipPath id="numberMask">
+                <rect class="numberMask" x="122.36" y="204.62" width="547.24" height="176.58" fill="red" />
+            </clipPath>
+            <clipPath id="happyBirthdayMask">
+                <rect class="happyBirthdayMask" x="-500" y="204.62" width="615" height="176.58" fill="#29abe2"/>	
+            </clipPath>
+            <path id="one_mid" d="M219.16,266.34h0v-62.6l15.24-.12V389.93H219.16Z" />
+            <path id="one_end" d="M219.16,266.34h0v-12.9l15.24-.12-1.14,62.58h-13Z"  />
+            <g class="confetti">
+                <rect class="paper" width="13" height="8" />
+            </g>
+        </defs>  <!-- Adding an image -->
+         <clipPath class="caption">สุขสันต์วันเกิดครับแม่ ขอให้มีความสุขมากๆ สุขภาพแข็งแรง เงินทองไหลมาเทมา ให้สมหวังทุกประการเด้อครับ</clipPath>
+        
+            <clipPath>
+                🎉🎉🎉
+            </clipPath>
+        <image id="birthdayImage" x="240" y="10" href="mom.png" opacity="0"/>
+        
+        <rect id="gradBar" x="120" y="376.31" width="556" height="10" fill="url(#gradPattern)"/>	
+        <path id="one_end" d="M219.16,266.34h-16.8V253.5l32-.12v89.4H219.16Z" fill="#fff" opacity="0"/>
+        <g id="oneContainer">
+            <path id="one" d="M219.16,266.34h-16.8V253.5l32-.12v89.4H219.16Z" fill="#fff" />
+        </g>
+        <g clip-path="url(#numberMask)">
+            <g id="numberGroup">
+                <text x="250" y="300" fill="#fff" font-size="48" font-family="Arial" id="dateText">17/06/2024</text>
+            </g>
+        </g>
+        <g clip-path="url(#happyBirthdayMask)">
+            <g id="happyBirthdayGroup">
+                <text x="200" y="300" fill="#fff" font-size="48" font-family="Arial" id="happyBirthdayText">
+                    Happy Birthday !
+                    <desc>สุขสันต์วันเกิดครับแม่ ขอให้มีความสุขมากๆ สุขภาพแข็งแรง เงินทองไหลมาเทมา ให้สมหวังทุกประการเด้อครับ</desc>
+                </text>
+                
+            </g>
+        </g>
+        <rect id="dot" x="662.8" y="326.58" width="14.88" height="16.2" fill="#fff"/>
+        <g class="container"/>
+    </svg>
+    <p id="caption"></p>
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MorphSVGPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

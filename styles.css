@@ -1,0 +1,44 @@
+body {
+    background-color: #131417;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+
+}
+
+#numberGroup {
+    margin-left: 20px;
+    font-size: 100px;
+    color: #fff;
+    text-align: center;
+}
+#birthdayImage {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.caption {
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
